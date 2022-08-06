@@ -40,11 +40,24 @@ public class LineComparison {
             System.out.println("Two Lines are Not Equal");
         }
     }
-        public static void main (String[]args){
+    //UC3 Compare two lines
+    void compareLine()
+    {
+
+        if (length1<length2) {
+            System.out.println("Line1 is less than Line2");
+        }
+        else{
+            System.out.println("Line1 is greater than line2");
+        }
+    }
+    
+    public static void main (String[]args){
             System.out.println("Welcome to Line Comparison program ");
             LineComparison lineComparison = new LineComparison();
             lineComparison.calculateLength();
             lineComparison.checkEquality();
+            lineComparison.compareLine();
 
         }
     }
